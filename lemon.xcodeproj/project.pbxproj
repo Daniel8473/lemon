@@ -12,6 +12,7 @@
 		6DC41AC825B448DB0097367D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC41AC725B448DB0097367D /* Assets.xcassets */; };
 		6DC41ACB25B448DB0097367D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC41ACA25B448DB0097367D /* Preview Assets.xcassets */; };
 		6DC41AD525B45CE20097367D /* QueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC41AD425B45CE20097367D /* QueueView.swift */; };
+		6DC41ADA25B471840097367D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6DC41AD825B471840097367D /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6DC41ACA25B448DB0097367D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6DC41ACC25B448DB0097367D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DC41AD425B45CE20097367D /* QueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueView.swift; sourceTree = "<group>"; };
+		6DC41AD925B471840097367D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				6DC41AC525B448DA0097367D /* HomeView.swift */,
 				6DC41AD425B45CE20097367D /* QueueView.swift */,
 				6DC41AC725B448DB0097367D /* Assets.xcassets */,
+				6DC41AD825B471840097367D /* Model.xcdatamodeld */,
 				6DC41ACC25B448DB0097367D /* Info.plist */,
 				6DC41AC925B448DB0097367D /* Preview Content */,
 			);
@@ -144,6 +147,7 @@
 				6DC41AC625B448DA0097367D /* HomeView.swift in Sources */,
 				6DC41AD525B45CE20097367D /* QueueView.swift in Sources */,
 				6DC41AC425B448DA0097367D /* lemonApp.swift in Sources */,
+				6DC41ADA25B471840097367D /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +336,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6DC41AD825B471840097367D /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6DC41AD925B471840097367D /* Model.xcdatamodel */,
+			);
+			currentVersion = 6DC41AD925B471840097367D /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6DC41AB825B448DA0097367D /* Project object */;
 }

@@ -9,17 +9,14 @@ import SwiftUI
 
 struct QueueView: View {
     var body: some View {
-        HStack {
+        ZStack {
             Image("background")
+            Text("que")
         }
     }
-}
-
-struct Business {
-    var businessName = ""
-    var lineLength = 0
     
 }
+
 
 struct QueueView_Previews: PreviewProvider {
     static var previews: some View {

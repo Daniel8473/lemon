@@ -21,6 +21,8 @@ struct HomeView: View {
     // ContentView Code
     var body: some View {
         ZStack {
+        
+
             Image("background")
             VStack {
                 Spacer()
@@ -31,6 +33,7 @@ struct HomeView: View {
                     print(b1.businessName + " " + String(b1.lineLength))
                 }, label: {
                     Text(business1)
+                        .font(.title)
                 })
                 Spacer()
                 Button(action: {
@@ -39,6 +42,7 @@ struct HomeView: View {
                     print(b2.businessName + " " + String(b2.lineLength))
                 }, label: {
                     Text(business2)
+                        .font(.title)
                 })
                 Spacer()
                 Button(action: {
@@ -47,6 +51,8 @@ struct HomeView: View {
                     print(b3.businessName + " " + String(b3.lineLength))
                 }, label: {
                     Text(business3)
+                        .font(.title)
+                        
                 })
                 Spacer()
                 Spacer()
@@ -61,6 +67,11 @@ struct HomeView: View {
     }
 }
 
+struct Business {
+    var businessName = ""
+    var lineLength = Int.random(in: 10...30)
+    
+}
 
 
 struct HomeView_Previews: PreviewProvider {
