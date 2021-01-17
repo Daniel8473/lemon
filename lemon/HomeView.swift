@@ -60,9 +60,6 @@ struct HomeView: View {
         
                 }
             }
-            NavigationLink(destination: QueueView()) {
-                Text("Login")
-            }
         }
     }
     
