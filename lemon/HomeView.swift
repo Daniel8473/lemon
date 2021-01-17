@@ -20,43 +20,48 @@ struct HomeView: View {
     
     // ContentView Code
     var body: some View {
-        ZStack {
+        NavigationView {
+            ZStack {
+                Image("background")
+                VStack {
+                    Spacer()
+                    Spacer()
+                    Button(action: {
+                        b1.businessName = business1
+                        b1.lineLength += 1
+                        print(b1.businessName + " " + String(b1.lineLength))
+                    }, label: {
+                        NavigationLink(destination: QueueView()) {
+                            Text(business1)
+                        }
+                    })
+                    Spacer()
+                    Button(action: {
+                        b2.businessName = business2
+                        b2.lineLength += 1
+                        print(b2.businessName + " " + String(b2.lineLength))
+                    }, label: {
+                        NavigationLink(destination: QueueView()) {
+                            Text(business2)
+                        }
+                    })
+                    Spacer()
+                    Button(action: {
+                        b3.businessName = business3
+                        b3.lineLength += 1
+                        print(b3.businessName + " " + String(b3.lineLength))
+                    }, label: {
+                        NavigationLink(destination: QueueView()) {
+                            Text(business3)
+                        }
+                    })
+                    Spacer()
+                    Spacer()
         
-
-            Image("background")
-            VStack {
-                Spacer()
-                Spacer()
-                Button(action: {
-                    b1.businessName = business1
-                    b1.lineLength += 1
-                    print(b1.businessName + " " + String(b1.lineLength))
-                }, label: {
-                    Text(business1)
-                        .font(.title)
-                })
-                Spacer()
-                Button(action: {
-                    b2.businessName = business2
-                    b2.lineLength += 1
-                    print(b2.businessName + " " + String(b2.lineLength))
-                }, label: {
-                    Text(business2)
-                        .font(.title)
-                })
-                Spacer()
-                Button(action: {
-                    b3.businessName = business3
-                    b3.lineLength += 1
-                    print(b3.businessName + " " + String(b3.lineLength))
-                }, label: {
-                    Text(business3)
-                        .font(.title)
-                        
-                })
-                Spacer()
-                Spacer()
-    
+                }
+            }
+            NavigationLink(destination: QueueView()) {
+                Text("Login")
             }
         }
     }
@@ -69,6 +74,7 @@ struct HomeView: View {
 
 struct Business {
     var businessName = ""
+    var businessID = 0
     var lineLength = Int.random(in: 10...30)
     
 }
