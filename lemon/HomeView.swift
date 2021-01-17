@@ -22,7 +22,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Image("background")
+                Image("home")
                 VStack {
                     Spacer()
                     Spacer()
